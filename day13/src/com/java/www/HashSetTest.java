@@ -59,16 +59,16 @@ public class HashSetTest {
         System.out.println(hset1);
 
         Iterator ite = hset1.iterator();
+        System.out.println("开始遍历hashset");
         while (ite.hasNext()) {
             System.out.println(ite.next());
         }
-
+        System.out.println("结束遍历hashset");
         HashSet hset2 = new HashSet();
         hset2.add(66);
         hset2.add(77);
         hset1.addAll(hset2);
         System.out.println(hset1);
-
         System.out.println(hset1.equals(hset2));
     }
 
@@ -131,9 +131,7 @@ class Dog {
         int result = name != null ? name.hashCode() : 0;
         result = 31 * result + age;
         return result;
-
 //        return ++init;
-
 //        return 3;
 
     }

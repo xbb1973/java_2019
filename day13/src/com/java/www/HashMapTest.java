@@ -60,11 +60,7 @@ public class HashMapTest {
         hmap1.put(33, 33);
         hmap1.put(null, null);
         hmap1.put(true, 3.14F);
-        hmap1.put(new Person("张剑", 23), "山东人");
-
-
-        System.out.println(hmap1.size());
-        System.out.println(hmap1);
+        hmap1.put(new com.java.www.Person("张剑", 23), "山东人");
 
         // Object remove(Object key) 删除指定key的元素
         hmap1.remove(true);
@@ -92,7 +88,7 @@ public class HashMapTest {
         hmap1.put(33, 33);
         hmap1.put(null, null);
         hmap1.put(true, 3.14F);
-        hmap1.put(new Person("张剑", 23), "山东人");
+        hmap1.put(new com.java.www.Person("张剑", 23), "山东人");
 
         // Object get(Object key) 获取指定key的元素，若key不存在则返回null
         Object obj = hmap1.get("k2");
@@ -122,7 +118,7 @@ public class HashMapTest {
         hmap2.put(33, 33);
         hmap2.put(null, null);
         hmap2.put(true, 3.14F);
-        hmap2.put(new Person("张剑", 23), "山东人");
+        hmap2.put(new com.java.www.Person("张剑", 23), "山东人");
 
         boolean eq = hmap2.equals(hmap1);
         System.out.println(eq); // true
@@ -136,7 +132,7 @@ public class HashMapTest {
         hmap1.put(33, 33);
         hmap1.put(null, null);
         hmap1.put(true, 3.14F);
-        hmap1.put(new Person("张剑", 23), "山东人");
+        hmap1.put(new com.java.www.Person("张剑", 23), "山东人");
 
         // Set keySet() 获取当前map所有的key，值为Set
         Set kset1 = hmap1.keySet();
